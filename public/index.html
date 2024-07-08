@@ -1,141 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naeural Edge Protocol</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        background: #ffffff;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .center-text {
-        text-align: center;
-      }
-      h1, h2, h4 {
-        color: #333;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 2.5em;
-      }
-      h2 {
-        font-size: 2em;
-      }
-      h4 {
-        font-size: 1.2em;
-      }
-      #message {
-        background: #f9f9f9;
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 40px 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      }
-      nav {
-        background: #ffffff;
-        padding: 15px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      }
-      nav .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      nav a {
-        color: #333;
-        margin: 0 10px;
-        text-decoration: none;
-        font-weight: 700;
-        transition: color 0.3s, transform 0.3s;
-      }
-      nav a:hover {
-        color: #007BFF;
-        transform: scale(1.1);
-      }
-      section {
-        background: #ffffff;
-        margin: 80px auto 40px;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        transition: transform 0.3s;
-      }
-      section:hover {
-        transform: translateY(-10px);
-      }
-      section h2 {
-        font-size: 2.2em;
-        margin-top: 0;
-      }
-      section p {
-        line-height: 1.8;
-        margin: 20px 0;
-        color: #555;
-      }
-      section ul {
-        list-style: none;
-        padding: 0;
-      }
-      section ul li {
-        margin: 10px 0;
-        padding: 10px 0;
-        border-bottom: 1px solid #ddd;
-      }
-      footer {
-        text-align: center;
-        padding: 20px;
-        background: #f1f1f1;
-        color: #333;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-      .logo {
-        height: 50px;
-        margin-right: 20px;
-      }
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 2em;
-        }
-        h2 {
-          font-size: 1.5em;
-        }
-        h4 {
-          font-size: 1em;
-        }
-        nav .container {
-          flex-direction: column;
-        }
-        nav a {
-          margin: 5px 0;
-        }
-      }
-    </style>
-  </head>
-  
-  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naeural Edge Protocol</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
 <body>
-
   <nav>
     <div class="container">
-      <img src="logo.jpg" alt="Naeural Logo" class="logo">
+      <img src="/mnt/data/logo.jpg" alt="Naeural Logo" class="logo">
       <div>
         <a href="#introduction">Introduction</a>
         <a href="#ai-blockchain">AI & Blockchain</a>
@@ -148,474 +23,480 @@
       </div>
     </div>
   </nav>
-  
-  
 
-  <div class="container" id="message">
-    <div class="center-text">
-      <img src="logo.jpg" alt="Naeural Logo" class="logo">
-      <h1>Introducing Naeural Edge Protocol</h1>
-      <h2>The first Operating System (OS) for Artificial Intelligence (AI) powered by AI and blockchain technologies</h2>
-      <h4>Written on Earth by Naeural.ai in April 2024</h4>
-    </div>
-  </div>
-  
-  
+  <div class="carousel">
+    <section id="introduction">
+      <div class="container center-text">
+        <img src="/mnt/data/logo.jpg" alt="Naeural Logo" class="logo">
+        <h1>Introducing Naeural Edge Protocol</h1>
+        <h2>The first Operating System (OS) for Artificial Intelligence (AI) powered by AI and blockchain technologies</h2>
+        <h4>Written on Earth by Naeural.ai in April 2024</h4>
+        <p>The Neural Edge Protocol, referred to as "Naeural," or as the "Operating System for AI," is a platform specifically designed to facilitate the rapid development and deployment of AI applications. Our platform integrates blockchain technology, enhancing the capabilities in terms of security, transparency, and decentralized data management. Our core mission is to democratize artificial intelligence by establishing a comprehensive network that facilitates the easy development and deployment of AI applications—from their initial concept to full execution. Naeural enables universal access to AI, allowing users to leverage its vast potential through a diverse suite of applications within our intuitive ecosystem, thus generating revenue for its active contributors. Our motto, "AI power to the people," reflects our vision of a future where AI solutions are ubiquitously available across computers and mobile devices globally, catering to both individual and organizational needs.</p>
+        <p>Naeural specifically targets key technical and economic obstacles by providing cost-effective AI application development, deployment and go-to-market solutions and support accessible via Blockchain technology including trustless micro-transactions. This model effectively reduces entry barriers, requiring only consumer-grade computing devices equipped with our platform. Our platform is designed to meet the needs of developers, computing providers, and non-experts in AI, ensuring broad usability and accessibility.</p>
+        <p>Our project ecosystem will establish a utility blockchain network wherein AI processing nodes will:</p>
+        <ul>
+          <li>Collaborate to execute tasks aligned with real-life use cases;</li>
+          <li>Generate revenue for the node owners who contribute services to the network;</li>
+          <li>Directly generate income for participants in the service provider network, including developers, maintainers, and other stakeholders.</li>
+        </ul>
+      </div>
+    </section>
 
-<div class="container">
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>The Neural Edge Protocol, referred to as "Naeural," or as the "Operating System for AI," is a platform specifically designed to facilitate the rapid development and deployment of AI applications. Our platform integrates blockchain technology, enhancing the capabilities in terms of security, transparency, and decentralized data management. Our core mission is to democratize artificial intelligence by establishing a comprehensive network that facilitates the easy development and deployment of AI applications—from their initial concept to full execution. Naeural enables universal access to AI, allowing users to leverage its vast potential through a diverse suite of applications within our intuitive ecosystem, thus generating revenue for its active contributors. Our motto, "AI power to the people," reflects our vision of a future where AI solutions are ubiquitously available across computers and mobile devices globally, catering to both individual and organizational needs.</p>
-    <p>Naeural specifically targets key technical and economic obstacles by providing cost-effective AI application development, deployment and go-to-market solutions and support accessible via Blockchain technology including trustless micro-transactions. This model effectively reduces entry barriers, requiring only consumer-grade computing devices equipped with our platform. Our platform is designed to meet the needs of developers, computing providers, and non-experts in AI, ensuring broad usability and accessibility.</p>
-    <p>Our project ecosystem will establish a utility blockchain network wherein AI processing nodes will:</p>
-    <ul>
-      <li>Collaborate to execute tasks aligned with real-life use cases;</li>
-      <li>Generate revenue for the node owners who contribute services to the network;</li>
-      <li>Directly generate income for participants in the service provider network, including developers, maintainers, and other stakeholders.</li>
-    </ul>
-  </section>
+    <section id="ai-blockchain">
+      <div class="container">
+        <h2>The cutting edge of AI & Blockchain</h2>
+        <p>Our Naeural initiative, as outlined in our <a href="https://arxiv.org/abs/2306.08708">foundational paper</a>, spearheads the democratization of AI through the implementation of a Decentralized Neuro-symbolic Autonomous processing framework, abbreviated as Naeural DNA. This innovative framework seamlessly integrates various data sources, facilitating the swift deployment of business rules via user-friendly low-code and no-code interfaces. Supported by its own SDKs/APIs for expedited application development, it harnesses the vast capabilities of Large Language Models.</p>
+        <p>Naeural introduces multi-domain Large Language Model (LLM) based applications within the Naeural DNA framework. This breakthrough enables the creation of versatile applications featuring various functionalities such as time series predictive analytics, zero-shot-training for anomaly detection, and video scene analysis without the need for training. These applications leverage state-of-the-art foundational models and are designed for effortless development, requiring no deployment or maintenance. Operating within a decentralized, token-based framework for budgeting and scalability, this fusion of advanced AI capabilities and decentralized processes positions Naeural as a catalyst for transformation in the AI landscape. By simplifying development and deployment, Naeural paves the way for a future where AI is accessible and seamlessly integrated into every facet of digital innovation.</p>
+        <p>Naeural stands at the forefront of economic and operational efficiency by incorporating a token-based system designed for intelligent budgeting and scaling. The platform seamlessly interfaces with web3 and the Ethereum Virtual Machine (EVM), facilitating smooth blockchain interactions. Leveraging IoT-based protocols such as MQTT, Naeural enhances security through signature-based validation and capitalizes on blockchain's inherent immutability, thereby ensuring dependable and secure operations within a trustless infrastructure.</p>
+        <p>The Naeural vision aligns seamlessly with ongoing digital transformation trends, aiming to convert computing devices into lucrative assets through a trustless model of shared processing power. This forward-looking approach not only provides incentives for device owners but also contributes to reducing the AI industry's carbon footprint. Through resource optimization, Naeural significantly reduces the time required to launch AI-powered applications, thereby fostering a more sustainable and economically viable AI ecosystem.</p>
+      </div>
+    </section>
 
-  <section id="ai-blockchain">
-    <h2>The cutting edge of AI & Blockchain</h2>
-    <p>Our <strong>Naeural</strong> initiative, as outlined in our <a href="https://arxiv.org/abs/2306.08708">foundational paper</a>, spearheads the democratization of AI through the implementation of a <strong>Decentralized Neuro-symbolic Autonomous</strong> processing framework, abbreviated as <strong>Naeural DNA</strong>. This innovative framework seamlessly integrates various data sources, facilitating the swift deployment of business rules via user-friendly low-code and no-code interfaces. Supported by its own SDKs/APIs for expedited application development, it harnesses the vast capabilities of Large Language Models.</p>
-    <p>Naeural introduces multi-domain Large Language Model (LLM) based applications within the Naeural DNA framework. This breakthrough enables the creation of versatile applications featuring various functionalities such as time series predictive analytics, zero-shot-training for anomaly detection, and video scene analysis without the need for training. These applications leverage state-of-the-art foundational models and are designed for effortless development, requiring no deployment or maintenance. Operating within a decentralized, token-based framework for budgeting and scalability, this fusion of advanced AI capabilities and decentralized processes positions Naeural as a catalyst for transformation in the AI landscape. By simplifying development and deployment, Naeural paves the way for a future where AI is accessible and seamlessly integrated into every facet of digital innovation.</p>
-    <p>Naeural stands at the forefront of economic and operational efficiency by incorporating a token-based system designed for intelligent budgeting and scaling. The platform seamlessly interfaces with web3 and the <strong>Ethereum Virtual Machine (EVM)</strong>, facilitating smooth blockchain interactions. Leveraging IoT-based protocols such as MQTT, Naeural enhances security through signature-based validation and capitalizes on blockchain's inherent immutability, thereby ensuring dependable and secure operations within a trustless infrastructure.</p>
-    <p>The Naeural vision aligns seamlessly with ongoing digital transformation trends, aiming to convert computing devices into lucrative assets through a trustless model of shared processing power. This forward-looking approach not only provides incentives for device owners but also contributes to reducing the AI industry's carbon footprint. Through resource optimization, Naeural significantly reduces the time required to launch AI-powered applications, thereby fostering a more sustainable and economically viable AI ecosystem.</p>
-  </section>
+    <section id="app-development">
+      <div class="container">
+        <h2>Fast app development & go-to-market</h2>
+        <p>Naeural's revolutionary architecture is characterized by five key features that expedite the development and deployment of AI in everyday applications:</p>
+        <ul>
+          <li>Template-Based Ready-to-Use Infrastructure - Offering pre-designed software and compute infrastructure templates tailored for various applications such as commercial safety & security, Smart City solutions, and blockchain gaming.</li>
+          <li>Optimized Decentralized Edge Node Grid - Service providers furnish a highly efficient grid of decentralized edge nodes capable of boosting compute power, where one Neural Edge Node (NEN) represents one instance of the Naeural software installed on a device. For example, a grid of 16 Nvidia A100-80 GPUs can provide computational power equivalent to that of 100-150 nodes installed on consumer-grade GPU computers, such as game consoles or mobile workstations, based on benchmarks measuring tasks like deep learning training or scientific simulations.</li>
+          <li>Flexible Consumer Deployment - End consumers have the flexibility to deploy their workloads on nearby network nodes, either free of charge or at reduced rates.</li>
+          <li>Transparent Pay-as-You-Go Model - Processing fees are automatically calculated, distributed in a trustless fashion, and transparently recorded using blockchain ledger technology.</li>
+          <li>Seamless Legacy and New Application Integration - Legacy-based applications and outdated software systems can be seamlessly integrated by forking base functionalities, while new applications can utilize plugin-based execution pipelines with readily available APIs and documentation.</li>
+        </ul>
+        <p>Regardless of your project's scope or your team's expertise, Naeural is designed to accelerate your project's launch, catering not only to AI projects but also to a diverse range of needs. For instance, if you require a horizontally scalable web-API with multiple endpoints, devoid of MQTT, AI, or blockchain integration, you can effortlessly set up endpoints using low-code and deploy a fleet of heterogeneous distributed microservices via our `ngrok` integration.</p>
+      </div>
+    </section>
 
-  <section id="app-development">
-    <h2>Fast app development & go-to-market</h2>
-    <p>Naeural's revolutionary architecture is characterized by five key features that expedite the development and deployment of AI in everyday applications:</p>
-    <ul>
-      <li><strong>Template-Based Ready-to-Use Infrastructure</strong> - Offering pre-designed software and compute infrastructure templates tailored for various applications such as commercial safety & security, Smart City solutions, and blockchain gaming.</li>
-      <li><strong>Optimized Decentralized Edge Node Grid</strong> - Service providers furnish a highly efficient grid of decentralized edge nodes capable of boosting compute power, where one <strong>Neural Edge Node (NEN)</strong> represents one instance of the Naeural software installed on a device. For example, a grid of 16 Nvidia A100-80 GPUs can provide computational power equivalent to that of 100-150 nodes installed on consumer-grade GPU computers, such as game consoles or mobile workstations, based on benchmarks measuring tasks like deep learning training or scientific simulations.</li>
-      <li><strong>Flexible Consumer Deployment</strong> - End consumers have the flexibility to deploy their workloads on nearby network nodes, either free of charge or at reduced rates.</li>
-      <li><strong>Transparent Pay-as-You-Go Model</strong> - Processing fees are automatically calculated, distributed in a trustless fashion, and transparently recorded using blockchain ledger technology.</li>
-      <li><strong>Seamless Legacy and New Application Integration</strong> - Legacy-based applications and outdated software systems can be seamlessly integrated by forking base functionalities, while new applications can utilize plugin-based execution pipelines with readily available APIs and documentation.</li>
-    </ul>
-    <p>Regardless of your project's scope or your team's expertise, Naeural is designed to accelerate your project's launch, catering not only to AI projects but also to a diverse range of needs. For instance, if you require a horizontally scalable web-API with multiple endpoints, devoid of MQTT, AI, or blockchain integration, you can effortlessly set up endpoints using low-code and deploy a fleet of heterogeneous distributed microservices via our `ngrok` integration.</p>
-  </section>
+    <section id="build-web2">
+      <div class="container">
+        <h2>Build and deploy a Web 2.0 application on Naeural Edge Protocol</h2>
+        <h3>Use case</h3>
+        <p>Consider a team developing a "continuous education with a twist" app for mobile devices. This application enables users to learn new skills through a gamified experience, covering a broad spectrum of content from elementary school math to advanced topics like programming, quantum physics, and information theory for postgraduate students. The application operates on a freemium model, offering basic content for free while providing access to premium content through a monthly subscription.</p>
+        <h3>Web 2.0 challenges</h3>
+        <p>The team faces numerous challenges, including application development, cloud deployment, infrastructure maintenance, data security, application scaling, monitoring, updates, customer support, and payment handling. Additionally, specific tasks such as content creation by experts and AI generative models, global content delivery via content delivery networks (CDNs), and dynamic scaling based on app success are complex and resource-intensive. These tasks require a diverse skill set and substantial resources, encompassing AI experts, backend and frontend developers, DevOps and cloud engineers, security and data engineers, data scientists, customer support staff, and teams for marketing, sales, finance, and legal matters.</p>
+        <h3>Naeural Edge Protocol is the solution</h3>
+        <p>The Naeural Edge Protocol offers a suite of tools and services that mitigate many of the above-mentioned challenges, allowing the team to focus on the application's core business experience. While not a one-size-fits-all solution, it effectively addresses key issues such as the cost and availability of AI expertise, cloud resources, backend development, scaling, balancing, monitoring, security, and payment processing.</p>
+        <p>With the Naeural Edge Protocol, the team can be dedicated to developing the web client to deliver an exceptional user experience, leveraging existing AI models and business templates for backend logic running on Naeural Edge Nodes (NENs). The protocol manages scaling, balancing, monitoring, and security, significantly reducing cloud infrastructure costs and enabling the team to prioritize the application's go-to-market strategy.</p>
+        <h3>Additional challenges for building Web 2.0 applications</h3>
+        <p>Besides the challenges mentioned for the presented use case, we have identified several others that we list below:</p>
+        <ul>
+          <li>Integration with existing systems and platforms</li>
+          <li>Compliance with local/international data protection frameworks</li>
+          <li>User-data privacy and ethical AI</li>
+          <li>Multilingual support and localization</li>
+          <li>Latency issues for users in remote regions</li>
+        </ul>
+        <h3>How we tackle them with Naeural</h3>
+        <p>The Neural Edge Protocol presents a robust and scalable platform that simplifies application deployment and management through:</p>
+        <ul>
+          <li>AI Model and pre-built logic integration: Incorporating pre-trained AI models and business templates to streamline content creation and backend logic.</li>
+          <li>Edge Computing: Making use of distributed edge nodes to handle computing tasks closer to the user, thereby reducing latency, improving performance, and functioning as a load balancing and content delivery network.</li>
+          <li>Automatic Scaling: Offering dynamic scaling capabilities that adjust resources automatically based on app usage and success.</li>
+          <li>Security and Compliance: Providing built-in security features and compliance tools to address data protection and regulatory requirements.</li>
+          <li>Cost Efficiency: Lowering cloud infrastructure costs by optimizing resource usage and employing decentralized computing.</li>
+          <li>Simplified Payment Processing: Implementing a web3-based payment solution with trustless wallet integration while using an external KYC provider.</li>
+        </ul>
+        <h3>Extending to a Web3 Business Model</h3>
+        <p>The Neural Edge Protocol seamlessly evolves the initial web2 business model into a web3 framework. Within this framework, nodes function as edge app hubs, facilitating both edge-backend processing as well as allowing crowdsourced and token-incentivized content curation. This expansion encompasses:</p>
+        <ul>
+          <li>Decentralized Content Curation: Users can actively contribute to content creation and curation, earning tokens as incentives, nurturing a community-driven content ecosystem.</li>
+          <li>Crowdsourcing: Harnessing the collective intelligence and creativity of the user base to enrich and diversify content offerings.</li>
+          <li>Token Incentives: Implementing a token-based reward system to encourage user participation in content creation and curation, ensuring ongoing engagement and high-quality contributions.</li>
+          <li>Dual Component Local Processing: Each locally installed edge node consists of two components: the UI/client and the node itself. The edge node desktop client app facilitates content creation, serving as a gateway for users to directly participate as producers on the network. This functionality does not compromise the edge node's inherent capabilities of balancing processing and content delivery.</li>
+        </ul>
+        <p>By integrating these web3 features, the partner team can refine their business model, establishing a more dynamic, community-driven platform that capitalizes on the benefits of decentralization and tokenization. This not only enhances the user experience but also ensures sustainable and scalable growth.</p>
+      </div>
+    </section>
 
-  <section id="build-web2">
-    <h2>Build and deploy a Web 2.0 application on Naeural Edge Protocol</h2>
-    <h3>Use case</h3>
-    <p>Consider a team developing a "continuous education with a twist" app for mobile devices. This application enables users to learn new skills through a gamified experience, covering a broad spectrum of content from elementary school math to advanced topics like programming, quantum physics, and information theory for postgraduate students. The application operates on a freemium model, offering basic content for free while providing access to premium content through a monthly subscription.</p>
-    <h3>Web 2.0 challenges</h3>
-    <p>The team faces numerous challenges, including application development, cloud deployment, infrastructure maintenance, data security, application scaling, monitoring, updates, customer support, and payment handling. Additionally, specific tasks such as content creation by experts and AI generative models, global content delivery via content delivery networks (CDNs), and dynamic scaling based on app success are complex and resource-intensive. These tasks require a diverse skill set and substantial resources, encompassing AI experts, backend and frontend developers, DevOps and cloud engineers, security and data engineers, data scientists, customer support staff, and teams for marketing, sales, finance, and legal matters.</p>
-    <h3>Naeural Edge Protocol is the solution</h3>
-    <p>The Naeural Edge Protocol offers a suite of tools and services that mitigate many of the above-mentioned challenges, allowing the team to focus on the application's core business experience. While not a one-size-fits-all solution, it effectively addresses key issues such as the cost and availability of AI expertise, cloud resources, backend development, scaling, balancing, monitoring, security, and payment processing.</p>
-    <p>With the Naeural Edge Protocol, the team can be dedicated to developing the web client to deliver an exceptional user experience, leveraging existing AI models and business templates for backend logic running on Naeural Edge Nodes (NENs). The protocol manages scaling, balancing, monitoring, and security, significantly reducing cloud infrastructure costs and enabling the team to prioritize the application's go-to-market strategy.</p>
-    <h3>Additional challenges for building Web 2.0 applications</h3>
-    <p>Besides the challenges mentioned for the presented use case, we have identified several others that we list below:</p>
-    <ul>
-      <li>Integration with existing systems and platforms</li>
-      <li>Compliance with local/international data protection frameworks</li>
-      <li>User-data privacy and ethical AI</li>
-      <li>Multilingual support and localization</li>
-      <li>Latency issues for users in remote regions</li>
-    </ul>
-    <h3>How we tackle them with Naeural</h3>
-    <p>The Neural Edge Protocol presents a robust and scalable platform that simplifies application deployment and management through:</p>
-    <ul>
-      <li><strong>AI Model and pre-built logic integration:</strong> Incorporating pre-trained AI models and business templates to streamline content creation and backend logic.</li>
-      <li><strong>Edge Computing:</strong> Making use of distributed edge nodes to handle computing tasks closer to the user, thereby reducing latency, improving performance, and functioning as a load balancing and content delivery network.</li>
-      <li><strong>Automatic Scaling:</strong> Offering dynamic scaling capabilities that adjust resources automatically based on app usage and success.</li>
-      <li><strong>Security and Compliance:</strong> Providing built-in security features and compliance tools to address data protection and regulatory requirements.</li>
-      <li><strong>Cost Efficiency:</strong> Lowering cloud infrastructure costs by optimizing resource usage and employing decentralized computing.</li>
-      <li><strong>Simplified Payment Processing:</strong> Implementing a web3-based payment solution with trustless wallet integration while using an external KYC provider.</li>
-    </ul>
-    <h3>Extending to a Web3 Business Model</h3>
-    <p>The Neural Edge Protocol seamlessly evolves the initial web2 business model into a web3 framework. Within this framework, nodes function as edge app hubs, facilitating both edge-backend processing as well as allowing crowdsourced and token-incentivized content curation. This expansion encompasses:</p>
-    <ul>
-      <li><strong>Decentralized Content Curation:</strong> Users can actively contribute to content creation and curation, earning tokens as incentives, nurturing a community-driven content ecosystem.</li>
-      <li><strong>Crowdsourcing:</strong> Harnessing the collective intelligence and creativity of the user base to enrich and diversify content offerings.</li>
-      <li><strong>Token Incentives:</strong> Implementing a token-based reward system to encourage user participation in content creation and curation, ensuring ongoing engagement and high-quality contributions.</li>
-      <li><strong>Dual Component Local Processing:</strong> Each locally installed edge node consists of two components: the UI/client and the node itself. The edge node desktop client app facilitates content creation, serving as a gateway for users to directly participate as producers on the network. This functionality does not compromise the edge node's inherent capabilities of balancing processing and content delivery.</li>
-    </ul>
-    <p>By integrating these web3 features, the partner team can refine their business model, establishing a more dynamic, community-driven platform that capitalizes on the benefits of decentralization and tokenization. This not only enhances the user experience but also ensures sustainable and scalable growth.</p>
-  </section>
+    <section id="technical-philosophy">
+      <div class="container">
+        <h2>Our technical philosophy at Naeural</h2>
+        <p>Our product embodies value; features serve as the window through which customers perceive our innovation;</p>
+        <p>The applications and their user interfaces act as gateways to the extensive capabilities of Naeural;</p>
+        <p>The applications validate the network's strength: prioritizing operational excellence and minimizing environmental impact;</p>
+        <p>Our SDKs champion our network, drawing developers and clients into our ecosystem with simplicity;</p>
+        <p>Feature development is an ongoing journey, continuously assimilated to enrich the functionality of the Naeural Edge Protocol;</p>
+        <p>All contributions play a role in the maturing of the Naeural Edge Protocol;</p>
+        <p>Simplicity guides our documentation, and efficiency is our SDKs’ hallmark;</p>
+        <p>Our team contributes not only with skills but also with a vision that places the customer at the center of all our efforts.</p>
+      </div>
+    </section>
 
-  <section id="technical-philosophy">
-    <h2>Our technical philosophy at Naeural</h2>
-    <p>Our product embodies value; features serve as the window through which customers perceive our innovation;</p>
-    <p>The applications and their user interfaces act as gateways to the extensive capabilities of Naeural;</p>
-    <p>The applications validate the network's strength: prioritizing operational excellence and minimizing environmental impact;</p>
-    <p>Our SDKs champion our network, drawing developers and clients into our ecosystem with simplicity;</p>
-    <p>Feature development is an ongoing journey, continuously assimilated to enrich the functionality of the Naeural Edge Protocol;</p>
-    <p>All contributions play a role in the maturing of the Naeural Edge Protocol;</p>
-    <p>Simplicity guides our documentation, and efficiency is our SDKs’ hallmark;</p>
-    <p>Our team contributes not only with skills but also with a vision that places the customer at the center of all our efforts.</p>
-  </section>
+    <section id="source-code">
+      <div class="container">
+        <h2>Naeural Edge Protocol source code</h2>
+        <p>All Naeural modules and repositories are openly available under the Apache 2.0 license. We are dedicated to nurturing community-driven development, democratizing AI, and progressing through collaborative research and innovation.</p>
+        <p>This repository hosts the public repositories of Naeural, encompassing the complete stack of modules necessary for building and running a decentralized AI training and inference Naeural Edge Node (NEN). Naeural is a pioneering protocol that harnesses decentralized computing and AI via edge-node software, facilitating on-edge inference and training. It integrates trustless microtransactions into its ecosystem, promoting a secure, efficient, and scalable network for AI development and deployment. This underscores the project's dedication to technological advancement while prioritizing financial growth and sustainability.</p>
+      </div>
+    </section>
 
-  <section id="source-code">
-    <h2>Naeural Edge Protocol source code</h2>
-    <p>All Naeural modules and repositories are openly available under the <strong>Apache 2.0 license</strong>. We are dedicated to nurturing community-driven development, democratizing AI, and progressing through collaborative research and innovation.</p>
-    <p>This repository hosts the public repositories of Naeural, encompassing the complete stack of modules necessary for building and running a decentralized AI training and inference <strong>Naeural Edge Node (NEN)</strong>. Naeural is a pioneering protocol that harnesses decentralized computing and AI via edge-node software, facilitating on-edge inference and training. It integrates trustless microtransactions into its ecosystem, promoting a secure, efficient, and scalable network for AI development and deployment. This underscores the project's dedication to technological advancement while prioritizing financial growth and sustainability.</p>
-  </section>
+    <section id="tokenomics">
+      <div class="container">
+        <h2>Tokenomics</h2>
+        <h3>Introduction into the Naeural Edge Protocol tokenomics</h3>
+        <p>The tokenomics of the Naeural Edge Protocol are meticulously designed to enhance the ecosystem's durability and expansion. As a core utility ERC-20 token, the Naeural Edge Protocol token functions as the principal currency facilitating transactions throughout the network. This tokenomics framework aims to reward all ecosystem contributors — developers, node operators, and users alike — encouraging active participation and sustained growth.</p>
+        <p>Since the Naeural Edge Protocol token operates as a utility token rather than a security token, its primary function lies in facilitating operational activities within the Naeural ecosystem, rather than speculative trading. It empowers users to contribute computing power, access diverse services, deploy applications, and eventually partake in governance processes. Consequently, there has not been, nor is there any intention for, a Token Generation Event (TGE) or Initial Coin/Token Offering (ICO/IDO) associated with the Naeural Edge Protocol token. All tokens, including those held in the Foundation's treasury, are distributed through Naeural Edge Node (NEN) licenses (Node Deeds) and the Naeural Edge Protocol decentralized application (dApp). These Node Deeds come in three forms: Genesis Node Deed (GND), Master Node Deed (MND), and Node Deed (ND).</p>
+        <blockquote>
+          <p><strong>NOTICE:</strong> The token reward system serves as an authentic Artificial Intelligence mining mechanism. It incentivizes your node's contribution, whether it's a personal PC, cloud VM, or data center hardware, to various aspects such as AI training, inference, endpoint provisioning, business rules execution, and protocol security. Your role, akin to manual labor, entails supplying power, provisioning hardware, installing software, maintaining the computer(s), and connecting the node(s) to the Internet, thereby supporting the protocol.</p>
+        </blockquote>
+        <h3>Genesis Node Deed (GND)</h3>
+        <p>A singular issuance exclusive to the Naeural Edge Protocol Foundation, the Genesis Node Deed (GND) activates the "edge node zero," the Foundation's virtual compute node. This activation is crucial for generating tokens allocated to the publicly disclosed Foundation token pools detailed further below. Essentially, the GND serves as the catalyst for initiating the entire Naeural Edge Protocol ecosystem.</p>
+        <h3>Master Node Deed (MND)</h3>
+        <p>A specialized node license that will be allocated to both the development team and initial investors. This deed plays a pivotal role in supporting and sustaining the core functions of the ecosystem. The emission period for MND spans over a duration of more than 36 months.</p>
+        <h3>Node Deed (ND)</h3>
+        <p>The license available for public purchase which enables the operation of individual edge nodes within the Naeural Edge Protocol ecosystem. These nodes are crucial for powering and maintaining the network's decentralized infrastructure. Unlike the emission strategy for MNDs, NDs are emitted at a faster rate, ensuring a prolonged vesting period.</p>
+        <h3>Pure utility token</h3>
+        <p>Our utility token is intricately designed to serve as the fuel for the Naeural Edge Protocol ecosystem, enabling a smooth and efficient operation across various functionalities. Here is an enhanced clarification of the utility token’s purpose and limitations:</p>
+        <ul>
+          <li>Defined Utility: The token acts as the operational gas required for processing jobs, allocating compute time, provisioning GPU resources, and acquiring licenses. It is essential for all transactional processes within the protocol, ensuring that each action is executed seamlessly.</li>
+          <li>No Financial Entitlements: Holders of the token will not receive any form of financial returns such as dividends, profit shares, interest, or other benefits typically associated with investments in the DeFi space. The token is strictly a utility mechanism within the Naeural Edge Protocol.</li>
+          <li>Exclusively Non-Investment: The primary function of our token is to facilitate transactions within the Naeural Edge Protocol’s ecosystem. It is specifically designed to support operational efficiency and is not intended for speculative trading or as an investment vehicle.</li>
+        </ul>
+        <h3>The Naeural Edge Protocol Treasury</h3>
+        <p>The Naeural Edge Protocol treasury encompasses multiple pools designed to delineate the scope of resource allocation.</p>
+        <h4>Internal Research & Development pool</h4>
+        <p>Dedicated to funding ongoing research and development efforts that are central to the advancement of the Naeural Edge Protocol. Investments from this pool ensure continuous innovation, improvement of existing technologies, and development of new functionalities within the protocol. It supports the technical team in enhancing the platform's capabilities and security features.</p>
+        <h4>Marketing and community growth pool</h4>
+        <p>Resources in this pool are allocated towards marketing initiatives and community engagement strategies. The focus is on building brand awareness, expanding user adoption, and fostering a strong, vibrant community around the Naeural Edge Protocol. Efforts include online campaigns, partnerships, community events, and educational programs to attract and retain users and developers.</p>
+        <h4>Hackathons and project grants pool</h4>
+        <p>Specifically set aside to sponsor hackathons and provide grants for projects that contribute to the Naeural ecosystem. By funding these activities, Naeural encourages innovation and practical implementation of ideas that can enhance the ecosystem. This not only stimulates creativity within the community but also helps in identifying and nurturing potential projects that could be integrated into the Naeural Edge Protocol Marketplace.</p>
+        <h4>Social responsibility pool</h4>
+        <p>Dedicated to initiatives that align with the Naeural Edge Protocol’s commitment to ethical practices and positive social impact. This includes contributions to causes such as sustainability projects, educational programs, and other community-enhancing projects. Through this pool, Naeural demonstrates its commitment to using technology for societal benefit and to promoting responsible AI and blockchain practices.</p>
+        <h3>Naeural Edge Protocol tokenomics allocation</h3>
+        <p>The Naeural Edge Protocol features a robust tokenomics structure with a fixed total supply of 1,618,033,988 tokens, a figure inspired by the Golden Ratio — a mathematical constant observed in natural and human-made structures, from the spirals of galaxies to the design of artworks and molecular structures. This number not only highlights the protocol’s dedication to balance and sustainability but also symbolizes its commitment to organic growth and technological evolution. Finally, for us this particular number signifies the human-centric approach for advancement of AI and blockchain technologies.</p>
+        <p>Unique to our approach is the absence of token generation events such as TGEs or ICO/IDO events. Instead, the entire token supply will be fully mined, released through the contribution of computational power by participants who operate edge nodes. This method ensures a finite and transparent token distribution from the start, aligning with our goal of a fully decentralized and participant-driven ecosystem.</p>
+        <p>Token distribution is intricately designed around the issuance of licenses, referred to as Node Deeds, available in three distinct forms. This framework supports our protocol’s philosophy and operational dynamics, fostering an equitable and scalable network.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Percentage</th>
+              <th>Price per token</th>
+              <th>Token source</th>
+              <th>No. of NFT</th>
+              <th>No. of ND</th>
+              <th>No. of MND</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Private sale: small investors</td>
+              <td>3%</td>
+              <td>0.01</td>
+              <td>MND</td>
+              <td>300</td>
+              <td></td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Private sale: smart money</td>
+              <td>10%</td>
+              <td>0.02</td>
+              <td>MND</td>
+              <td>1,000</td>
+              <td></td>
+              <td>1,000</td>
+            </tr>
+            <tr>
+              <td>Advisors, influencers, advocates</td>
+              <td>2.5%</td>
+              <td></td>
+              <td>MND</td>
+              <td>250</td>
+              <td></td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>DEX pool</td>
+              <td>0.45%</td>
+              <td>0.04</td>
+              <td>GND</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>DEX extra pool</td>
+              <td>1%</td>
+              <td></td>
+              <td>GND</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CEX pool</td>
+              <td>8%</td>
+              <td>0.05</td>
+              <td>GND</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Founding team</td>
+              <td>13%</td>
+              <td></td>
+              <td>MND</td>
+              <td>1,300</td>
+              <td></td>
+              <td>1,300</td>
+            </tr>
+            <tr>
+              <td>Internal Research & Development pool</td>
+              <td>5%</td>
+              <td></td>
+              <td>GND</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Marketing and community growth pool</td>
+              <td>2%</td>
+              <td></td>
+              <td>GND</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Hackathons and project grants pool</td>
+              <td>10%</td>
+              <td></td>
+              <td>GND</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Social responsibility pool</td>
+              <td>6.75%</td>
+              <td></td>
+              <td>GND</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Proof of AI/Availability</td>
+              <td>38.3%</td>
+              <td></td>
+              <td>ND</td>
+              <td>5,000</td>
+              <td>5,000</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Node Deeds pricing schema</h3>
+        <p>The Naeural Edge Protocol employs a unique anti-inflationary pricing strategy for its Node Deeds, which are essential NFT-licenses for each Edge Node within the ecosystem. This method systematically increases the cost of Node Deeds as more are purchased, ensuring that only genuine economic factors drive their acquisition. This tiered pricing model is designed to mitigate speculative buying and promote a stable growth environment for the network. For instance, the "Universal (no zone boundary)" Node Deed starts at a price of $500 during the first stage with 100 units available. As demand increases and these initial units are sold, the price escalates to $1,000 in the second stage for the next 250 units, and further to $2,500 for 300 units in the third stage. This pattern is mirrored in specific zones labeled A, B, and C, with starting prices at $2,500 and sharply rising through subsequent stages—reaching up to $50,000 in stage V. Each zone follows a similar escalation, underscoring the protocol's commitment to controlling inflation and ensuring that Node Deeds are acquired for their intended utility rather than for speculative purposes.</p>
+        <p>The approach not only aligns with Naeural’s ethos of democratizing AI via blockchain but also ensures that the growth of the network is economically sustainable. By increasing prices as more deeds are purchased, Naeural effectively controls the rate of expansion, aligns Node Deed ownership with actual usage and contribution to the ecosystem, and secures the network's long-term viability. This strategy exemplifies a thoughtful integration of economic principles with technological innovation, aiming to foster a robust and equitable ecosystem.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Node Deed</th>
+              <th>Stage</th>
+              <th>USD</th>
+              <th>Source</th>
+              <th>Units</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Universal (no zone boundary)</td>
+              <td>I</td>
+              <td>500</td>
+              <td>Initial mint</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Universal (no zone boundary)</td>
+              <td>II</td>
+              <td>1,000</td>
+              <td>Initial mint</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Universal (no zone boundary)</td>
+              <td>III</td>
+              <td>2,500</td>
+              <td>Initial mint</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Zone A</td>
+              <td>I</td>
+              <td>2,500</td>
+              <td>Zone mint</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Zone A</td>
+              <td>II</td>
+              <td>5,000</td>
+              <td>Zone mint</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Zone A</td>
+              <td>III</td>
+              <td>10,000</td>
+              <td>Zone mint</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Zone A</td>
+              <td>IV</td>
+              <td>25,000</td>
+              <td>Zone mint</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Zone A</td>
+              <td>V</td>
+              <td>50,000</td>
+              <td>Zone mint</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Zone B</td>
+              <td>I</td>
+              <td>2,500</td>
+              <td>Zone mint</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Zone B</td>
+              <td>II</td>
+              <td>5,000</td>
+              <td>Zone mint</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Zone B</td>
+              <td>III</td>
+              <td>10,000</td>
+              <td>Zone mint</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Zone B</td>
+              <td>IV</td>
+              <td>25,000</td>
+              <td>Zone mint</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Zone B</td>
+              <td>V</td>
+              <td>50,000</td>
+              <td>Zone mint</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Zone C</td>
+              <td>I</td>
+              <td>2,500</td>
+              <td>Zone mint</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Zone C</td>
+              <td>II</td>
+              <td>5,000</td>
+              <td>Zone mint</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Zone C</td>
+              <td>III</td>
+              <td>10,000</td>
+              <td>Zone mint</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Zone C</td>
+              <td>IV</td>
+              <td>25,000</td>
+              <td>Zone mint</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Zone C</td>
+              <td>V</td>
+              <td>50,000</td>
+              <td>Zone mint</td>
+              <td>500</td>
+            </tr>
+          </tbody>
+        </table>
+        <blockquote>
+          <p><strong>Important Notice:</strong> Please be aware that the boundaries and definitions of Zones A-C are currently under review and have yet to be finalized. These specifics are subject to discussion and will be determined through DAO voting to ensure community consensus. Additionally, we are considering the option to continue issuing Universal (no zone boundary) Node Deeds. Should this path be chosen, pricing adjustments will be implemented as already presented above to safeguard against inflationary pressures on processing power, ensuring the sustainability of our ecosystem.</p>
+        </blockquote>
+      </div>
+    </section>
 
-  <section id="tokenomics">
-    <h2>Tokenomics</h2>
-    <h3>Introduction into the Naeural Edge Protocol tokenomics</h3>
-    <p>The tokenomics of the Naeural Edge Protocol are meticulously designed to enhance the ecosystem's durability and expansion. As a core <strong>utility ERC-20 token</strong>, the Naeural Edge Protocol token functions as the principal currency facilitating transactions throughout the network. This tokenomics framework aims to reward all ecosystem contributors — developers, node operators, and users alike — encouraging active participation and sustained growth.</p>
-    <p>Since the Naeural Edge Protocol token operates as a utility token rather than a security token, its primary function lies in facilitating operational activities within the Naeural ecosystem, rather than speculative trading. It empowers users to contribute computing power, access diverse services, deploy applications, and eventually partake in governance processes. Consequently, there has not been, nor is there any intention for, a <strong>Token Generation Event (TGE)</strong> or <strong>Initial Coin/Token Offering (ICO/IDO)</strong> associated with the Naeural Edge Protocol token. All tokens, including those held in the Foundation's treasury, are distributed through <strong>Naeural Edge Node (NEN) licenses</strong> (Node Deeds) and the Naeural Edge Protocol decentralized application (dApp). These Node Deeds come in three forms: <strong>Genesis Node Deed (GND)</strong>, <strong>Master Node Deed (MND)</strong>, and <strong>Node Deed (ND)</strong>.</p>
-    <blockquote>
-      <p><strong>NOTICE:</strong> The token reward system serves as an authentic Artificial Intelligence mining mechanism. It incentivizes your node's contribution, whether it's a personal PC, cloud VM, or data center hardware, to various aspects such as AI training, inference, endpoint provisioning, business rules execution, and protocol security. Your role, akin to manual labor, entails supplying power, provisioning hardware, installing software, maintaining the computer(s), and connecting the node(s) to the Internet, thereby supporting the protocol.</p>
-    </blockquote>
-    <h3>Genesis Node Deed (GND)</h3>
-    <p>A singular issuance exclusive to the <strong>Naeural Edge Protocol Foundation</strong>, the <strong>Genesis Node Deed (GND)</strong> activates the "edge node zero," the Foundation's virtual compute node. This activation is crucial for generating tokens allocated to the publicly disclosed Foundation token pools detailed further below. Essentially, the GND serves as the catalyst for initiating the entire Naeural Edge Protocol ecosystem.</p>
-    <h3>Master Node Deed (MND)</h3>
-    <p>A specialized node license that will be allocated to both the development team and initial investors. This deed plays a pivotal role in supporting and sustaining the core functions of the ecosystem. The emission period for MND spans over a duration of more than 36 months.</p>
-    <h3>Node Deed (ND)</h3>
-    <p>The license available for public purchase which enables the operation of individual edge nodes within the Naeural Edge Protocol ecosystem. These nodes are crucial for powering and maintaining the network's decentralized infrastructure. Unlike the emission strategy for MNDs, NDs are emitted at a faster rate, ensuring a prolonged vesting period.</p>
-    <h3>Pure utility token</h3>
-    <p>Our utility token is intricately designed to serve as the fuel for the Naeural Edge Protocol ecosystem, enabling a smooth and efficient operation across various functionalities. Here is an enhanced clarification of the utility token’s purpose and limitations:</p>
-    <ul>
-      <li><strong>Defined Utility:</strong> The token acts as the operational gas required for processing jobs, allocating compute time, provisioning GPU resources, and acquiring licenses. It is essential for all transactional processes within the protocol, ensuring that each action is executed seamlessly.</li>
-      <li><strong>No Financial Entitlements:</strong> Holders of the token will not receive any form of financial returns such as dividends, profit shares, interest, or other benefits typically associated with investments in the DeFi space. The token is strictly a utility mechanism within the Naeural Edge Protocol.</li>
-      <li><strong>Exclusively Non-Investment:</strong> The primary function of our token is to facilitate transactions within the Naeural Edge Protocol’s ecosystem. It is specifically designed to support operational efficiency and is not intended for speculative trading or as an investment vehicle.</li>
-    </ul>
-    <h3>The Naeural Edge Protocol Treasury</h3>
-    <p>The Naeural Edge Protocol treasury encompasses multiple pools designed to delineate the scope of resource allocation.</p>
-    <h4>Internal Research & Development pool</h4>
-    <p>Dedicated to funding ongoing research and development efforts that are central to the advancement of the Naeural Edge Protocol. Investments from this pool ensure continuous innovation, improvement of existing technologies, and development of new functionalities within the protocol. It supports the technical team in enhancing the platform's capabilities and security features.</p>
-    <h4>Marketing and community growth pool</h4>
-    <p>Resources in this pool are allocated towards marketing initiatives and community engagement strategies. The focus is on building brand awareness, expanding user adoption, and fostering a strong, vibrant community around the Naeural Edge Protocol. Efforts include online campaigns, partnerships, community events, and educational programs to attract and retain users and developers.</p>
-    <h4>Hackathons and project grants pool</h4>
-    <p>Specifically set aside to sponsor hackathons and provide grants for projects that contribute to the Naeural ecosystem. By funding these activities, Naeural encourages innovation and practical implementation of ideas that can enhance the ecosystem. This not only stimulates creativity within the community but also helps in identifying and nurturing potential projects that could be integrated into the Naeural Edge Protocol Marketplace.</p>
-    <h4>Social responsibility pool</h4>
-    <p>Dedicated to initiatives that align with the Naeural Edge Protocol’s commitment to ethical practices and positive social impact. This includes contributions to causes such as sustainability projects, educational programs, and other community-enhancing projects. Through this pool, Naeural demonstrates its commitment to using technology for societal benefit and to promoting responsible AI and blockchain practices.</p>
-    <h3>Naeural Edge Protocol tokenomics allocation</h3>
-    <p>The Naeural Edge Protocol features a robust tokenomics structure with a fixed total supply of <strong>1,618,033,988</strong> tokens, a figure inspired by the Golden Ratio — a mathematical constant observed in natural and human-made structures, from the spirals of galaxies to the design of artworks and molecular structures. This number not only highlights the protocol’s dedication to balance and sustainability but also symbolizes its commitment to organic growth and technological evolution. Finally, for us this particular number signifies the human-centric approach for advancement of AI and blockchain technologies.</p>
-    <p>Unique to our approach is the absence of token generation events such as TGEs or ICO/IDO events. Instead, the entire token supply will be fully mined, released through the contribution of computational power by participants who operate edge nodes. This method ensures a finite and transparent token distribution from the start, aligning with our goal of a fully decentralized and participant-driven ecosystem.</p>
-    <p>Token distribution is intricately designed around the issuance of licenses, referred to as Node Deeds, available in three distinct forms. This framework supports our protocol’s philosophy and operational dynamics, fostering an equitable and scalable network.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Category</th>
-          <th>Percentage</th>
-          <th>Price per token</th>
-          <th>Token source</th>
-          <th>No. of NFT</th>
-          <th>No. of ND</th>
-          <th>No. of MND</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Private sale: small investors</td>
-          <td>3%</td>
-          <td>0.01</td>
-          <td>MND</td>
-          <td>300</td>
-          <td></td>
-          <td>300</td>
-        </tr>
-        <tr>
-          <td>Private sale: smart money</td>
-          <td>10%</td>
-          <td>0.02</td>
-          <td>MND</td>
-          <td>1,000</td>
-          <td></td>
-          <td>1,000</td>
-        </tr>
-        <tr>
-          <td>Advisors, influencers, advocates</td>
-          <td>2.5%</</td>
-          <td></td>
-          <td>MND</td>
-          <td>250</td>
-          <td></td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>DEX pool</td>
-          <td>0.45%</td>
-          <td>0.04</td>
-          <td>GND</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>DEX extra pool</td>
-          <td>1%</td>
-          <td></td>
-          <td>GND</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>CEX pool</td>
-          <td>8%</td>
-          <td>0.05</td>
-          <td>GND</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Founding team</td>
-          <td>13%</td>
-          <td></td>
-          <td>MND</td>
-          <td>1,300</td>
-          <td></td>
-          <td>1,300</td>
-        </tr>
-        <tr>
-          <td>Internal Research & Development pool</td>
-          <td>5%</td>
-          <td></td>
-          <td>GND</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Marketing and community growth pool</td>
-          <td>2%</td>
-          <td></td>
-          <td>GND</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Hackathons and project grants pool</td>
-          <td>10%</</td>
-          <td></td>
-          <td>GND</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Social responsibility pool</td>
-          <td>6.75%</</td>
-          <td></td>
-          <td>GND</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Proof of AI/Availability</td>
-          <td>38.3%</td>
-          <td></td>
-          <td>ND</td>
-          <td>5,000</td>
-          <td>5,000</td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Node Deeds pricing schema</h3>
-    <p>The Naeural Edge Protocol employs a unique anti-inflationary pricing strategy for its Node Deeds, which are essential NFT-licenses for each Edge Node within the ecosystem. This method systematically increases the cost of Node Deeds as more are purchased, ensuring that only genuine economic factors drive their acquisition. This tiered pricing model is designed to mitigate speculative buying and promote a stable growth environment for the network. For instance, the "Universal (no zone boundary)" Node Deed starts at a price of $500 during the first stage with 100 units available. As demand increases and these initial units are sold, the price escalates to $1,000 in the second stage for the next 250 units, and further to $2,500 for 300 units in the third stage. This pattern is mirrored in specific zones labeled A, B, and C, with starting prices at $2,500 and sharply rising through subsequent stages—reaching up to $50,000 in stage V. Each zone follows a similar escalation, underscoring the protocol's commitment to controlling inflation and ensuring that Node Deeds are acquired for their intended utility rather than for speculative purposes.</p>
-    <p>The approach not only aligns with Naeural’s ethos of democratizing AI via blockchain but also ensures that the growth of the network is economically sustainable. By increasing prices as more deeds are purchased, Naeural effectively controls the rate of expansion, aligns Node Deed ownership with actual usage and contribution to the ecosystem, and secures the network's long-term viability. This strategy exemplifies a thoughtful integration of economic principles with technological innovation, aiming to foster a robust and equitable ecosystem.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Node Deed</th>
-          <th>Stage</th>
-          <th>USD</th>
-          <th>Source</th>
-          <th>Units</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Universal (no zone boundary)</td>
-          <td>I</td>
-          <td>500</td>
-          <td>Initial mint</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <td>Universal (no zone boundary)</td>
-          <td>II</td>
-          <td>1,000</td>
-          <td>Initial mint</td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>Universal (no zone boundary)</td>
-          <td>III</td>
-          <td>2,500</td>
-          <td>Initial mint</td>
-          <td>300</td>
-        </tr>
-        <tr>
-          <td>Zone A</td>
-          <td>I</td>
-          <td>2,500</td>
-          <td>Zone mint</td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>Zone A</td>
-          <td>II</td>
-          <td>5,000</td>
-          <td>Zone mint</td>
-          <td>150</td>
-        </tr>
-        <tr>
-          <td>Zone A</td>
-          <td>III</td>
-          <td>10,000</td>
-          <td>Zone mint</td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>Zone A</td>
-          <td>IV</td>
-          <td>25,000</td>
-          <td>Zone mint</td>
-          <td>300</td>
-        </tr>
-        <tr>
-          <td>Zone A</td>
-          <td>V</td>
-          <td>50,000</td>
-          <td>Zone mint</td>
-          <td>500</td>
-        </tr>
-        <tr>
-          <td>Zone B</td>
-          <td>I</td>
-          <td>2,500</td>
-          <td>Zone mint</td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>Zone B</td>
-          <td>II</td>
-          <td>5,000</td>
-          <td>Zone mint</td>
-          <td>150</td>
-        </tr>
-        <tr>
-          <td>Zone B</td>
-          <td>III</td>
-          <td>10,000</td>
-          <td>Zone mint</td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>Zone B</td>
-          <td>IV</td>
-          <td>25,000</td>
-          <td>Zone mint</td>
-          <td>300</td>
-        </tr>
-        <tr>
-          <td>Zone B</td>
-          <td>V</td>
-          <td>50,000</td>
-          <td>Zone mint</td>
-          <td>500</td>
-        </tr>
-        <tr>
-          <td>Zone C</td>
-          <td>I</td>
-          <td>2,500</td>
-          <td>Zone mint</td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>Zone C</td>
-          <td>II</td>
-          <td>5,000</td>
-          <td>Zone mint</td>
-          <td>150</td>
-        </tr>
-        <tr>
-          <td>Zone C</td>
-          <td>III</td>
-          <td>10,000</td>
-          <td>Zone mint</td>
-          <td>250</td>
-        </tr>
-        <tr>
-          <td>Zone C</td>
-          <td>IV</td>
-          <td>25,000</td>
-          <td>Zone mint</td>
-          <td>300</td>
-        </tr>
-        <tr>
-          <td>Zone C</td>
-          <td>V</td>
-          <td>50,000</td>
-          <td>Zone mint</td>
-          <td>500</td>
-        </tr>
-      </tbody>
-    </table>
-    <blockquote>
-      <p><strong>Important Notice:</strong> Please be aware that the boundaries and definitions of Zones A-C are currently under review and have yet to be finalized. These specifics are subject to discussion and will be determined through DAO voting to ensure community consensus. Additionally, we are considering the option to continue issuing Universal (no zone boundary) Node Deeds. Should this path be chosen, pricing adjustments will be implemented as already presented above to safeguard against inflationary pressures on processing power, ensuring the sustainability of our ecosystem.</p>
-    </blockquote>
-  </section>
-
-  <section id="roadmap">
-    <h2>Roadmap</h2>
-    <h3>Technical Roadmap</h3>
-    <ul>
-      <li>Q2 2021: Plugin-based execution pipelines</li>
-      <li>Q2 2021: First version of the <strong>Naeural DNA</strong> modules</li>
-      <li>Q3 2021: Private Blockchain libraries and SDK ready for testing</li>
-      <li>Q4 2021: Naeural Edge Node initial tests (for AI deep learning models inference and training)</li>
-      <li>Q1 2022: Additional use cases added to the Naeural DNA</li>
-      <li>Q2 2022: Naeural DNA fully operational & ready for web2 applications</li>
-      <li>Q3 2022: Research projects and collaborations within web2 space</li>
-      <li>Q1 2023: Large Language Models support in the Naeural DNA with various backends</li>
-      <li>Q2 2023: Naeural DNA and Naeural Edge Node used for 3rd party AI projects</li>
-      <li>Q4 2023: Naeural Edge Protocol taxonomy launched and functional including Supervisors nodes and Network monitoring</li>
-      <li>Q1 2024: Protocol Epoch Management algorithms integrated into the Naeural DNA</li>
-      <li>Apr 2024: Epoch Management Oracles functional both in edge nodes as well as in cloud</li>
-      <li>Apr 2024: Naeural Edge Protocol dApp launched on testnet: token redeeming, Node Deed purchasing with tokens, oracle integration</li>
-      <li>May 2024: Naeural Edge Protocol token live on mainnet</li>
-      <li>May 2024: Naeural Edge Protocol dApp launched on mainnet</li>
-      <li>Jun 2024: Naeural Edge Protocol MND (Master Node Deeds) partially distributed to team and seed investors</li>
-      <li>Jun 2024: Token redeem in dApp available for Proof-of-Availability</li>
-      <li>Jul 2024: Naeural Edge Protocol Proof-of-AI Oracles functional</li>
-      <li>Jul 2024: Token redeem available in dApp for Proof-of-AI</li>
-      <li>Aug 2024: Naeural Edge Protocol Framework v1 available for AI applications</li>
-      <li>Q2 2025: Naeural Edge Protocol Framework v2 available for AI applications</li>
-      <li>Q4 2025: Naeural Edge Protocol Framework v3 available for AI applications</li>
-    </ul>
-    <h3>Commercial Roadmap</h3>
-    <ul>
-      <li>Apr 2024: Initial onboarding of seed investors</li>
-      <li>May 2024: Multisig wallet & initial DAO board established</li>
-      <li>May 2024: Naeural Protocol Foundation launched</li>
-      <li>Jun 2024: Liquidity pool on Uniswap (Arbitrum mainnet)</li>
-      <li>Jun 2024: Marketing campaign and launch for the first Node Deed sale</li>
-      <li>Jul 2024: First burn of tokens post Node Deed sale</li>
-      <li>Aug 2024: Initial set of 3 template applications available for quick app go-to-market</li>
-      <li>Sep 2024: 1st rounds of meetings with large potential partners</li>
-      <li>Sep 2024: 1st Naeural Edge Protocol hackathon</li>
-      <li>Oct 2024: Naeural Edge Protocol Community Governance launched</li>
-      <li>Nov 2024: Token listed on at least 1 major exchange</li>
-      <li>Dec 2024: 2nd Naeural Edge Protocol hackhaton</li>
-      <li>Dec 2024: 3rd party applications available on Naeural Edge Protocol Marketplace including hackathon winners</li>
-      <li>Q1 2025: At least 2 developer teams onboarded and deploying their applications on Naeural Edge Protocol</li>
-      <li>Q1 2025: 3rd Naeural Edge Protocol hackathon</li>
-      <li>Q1 2025: Token listed on at least 2 additional exchanges</li>
-      <li>Q2 2025: Internal team growth to 20 members and 20+ 3rd party Open Source contributors to Naeural DNA development</li>
-      <li>Q2 2025: 4th Naeural Edge Protocol hackathon</li>
-      <li>Q3 2025: 1st edition of Naeural Edge Protocol web3 conference</li>
-      <li>Q3 2025: Token listed on at least 2 additional exchanges</li>
-      <li>Q4 2025: Launch of no-code suite of development tools for Naeural Edge Protocol</li>
-      <li>Q4 2025: 5th Naeural Edge Protocol hackathon</li>
-    </ul>
-  </section>
-</div>
-
-<footer>
-  &copy; 2024 Naeural.ai - All Rights Reserved
-</footer>
-
-</body>
-</html>
+    <section id="roadmap">
+      <div class="container">
+        <h2>Roadmap</h2>
+        <h3>Technical Roadmap</h3>
+        <ul>
+          <li>Q2 2021: Plugin-based execution pipelines</li>
+          <li>Q2 2021: First version of the Naeural DNA modules</li>
+          <li>Q3 2021: Private Blockchain libraries and SDK ready for testing</li>
+          <li>Q4 2021: Naeural Edge Node initial tests (for AI deep learning models inference and training)</li>
+          <li>Q1 2022: Additional use cases added to the Naeural DNA</li>
+          <li>Q2 2022: Naeural DNA fully operational & ready for web2 applications</li>
+          <li>Q3 2022: Research projects and collaborations within web2 space</li>
+          <li>Q1 2023: Large Language Models support in the Naeural DNA with various backends</li>
+          <li>Q2 2023: Naeural DNA and Naeural Edge Node used for 3rd party AI projects</li>
+          <li>Q4 2023: Naeural Edge Protocol taxonomy launched and functional including Supervisors nodes and Network monitoring</li>
+          <li>Q1 2024: Protocol Epoch Management algorithms integrated into the Naeural DNA</li>
+          <li>Apr 2024: Epoch Management Oracles functional both in edge nodes as well as in cloud</li>
+            <li>Apr 2024: Naeural Edge Protocol dApp launched on testnet: token redeeming, Node Deed purchasing with tokens, oracle integration</li>
+            <li>May 2024: Naeural Edge Protocol token live on mainnet</li>
+            <li>May 2024: Naeural Edge Protocol dApp launched on mainnet</li>
+            <li>Jun 2024: Naeural Edge Protocol MND (Master Node Deeds) partially distributed to team and seed investors</li>
+            <li>Jun 2024: Token redeem in dApp available for Proof-of-Availability</li>
+            <li>Jul 2024: Naeural Edge Protocol Proof-of-AI Oracles functional</li>
+            <li>Jul 2024: Token redeem available in dApp for Proof-of-AI</li>
+            <li>Aug 2024: Naeural Edge Protocol Framework v1 available for AI applications</li>
+            <li>Q2 2025: Naeural Edge Protocol Framework v2 available for AI applications</li>
+            <li>Q4 2025: Naeural Edge Protocol Framework v3 available for AI applications</li>
+          </ul>
+          <h3>Commercial Roadmap</h3>
+          <ul>
+            <li>Apr 2024: Initial onboarding of seed investors</li>
+            <li>May 2024: Multisig wallet & initial DAO board established</li>
+            <li>May 2024: Naeural Protocol Foundation launched</li>
+            <li>Jun 2024: Liquidity pool on Uniswap (Arbitrum mainnet)</li>
+            <li>Jun 2024: Marketing campaign and launch for the first Node Deed sale</li>
+            <li>Jul 2024: First burn of tokens post Node Deed sale</li>
+            <li>Aug 2024: Initial set of 3 template applications available for quick app go-to-market</li>
+            <li>Sep 2024: 1st rounds of meetings with large potential partners</li>
+            <li>Sep 2024: 1st Naeural Edge Protocol hackathon</li>
+            <li>Oct 2024: Naeural Edge Protocol Community Governance launched</li>
+            <li>Nov 2024: Token listed on at least 1 major exchange</li>
+            <li>Dec 2024: 2nd Naeural Edge Protocol hackhaton</li>
+            <li>Dec 2024: 3rd party applications available on Naeural Edge Protocol Marketplace including hackathon winners</li>
+            <li>Q1 2025: At least 2 developer teams onboarded and deploying their applications on Naeural Edge Protocol</li>
+            <li>Q1 2025: 3rd Naeural Edge Protocol hackathon</li>
+            <li>Q1 2025: Token listed on at least 2 additional exchanges</li>
+            <li>Q2 2025: Internal team growth to 20 members and 20+ 3rd party Open Source contributors to Naeural DNA development</li>
+            <li>Q2 2025: 4th Naeural Edge Protocol hackathon</li>
+            <li>Q3 2025: 1st edition of Naeural Edge Protocol web3 conference</li>
+            <li>Q3 2025: Token listed on at least 2 additional exchanges</li>
+            <li>Q4 2025: Launch of no-code suite of development tools for Naeural Edge Protocol</li>
+            <li>Q4 2025: 5th Naeural Edge Protocol hackathon</li>
+          </ul>
+        </section>
+      </div>
+      
+      <footer>
+        &copy; 2024 Naeural.ai - All Rights Reserved
+      </footer>
+      
+      </body>
+      </html>
+      
