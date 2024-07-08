@@ -23,6 +23,7 @@ body {
 
 .sidebar .logo {
   height: 50px;
+  width: 50px;
   margin: 0 auto 20px;
   display: block;
 }
@@ -70,10 +71,17 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+.content img.logo {
+  max-width: 150px; /* Adjust this value as needed */
+  display: block;
+  margin: 0 auto 20px; /* Center the logo and add some bottom margin */
+}
+
 .carousel section {
   scroll-snap-align: start;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
-  margin: 20px 0;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -82,6 +90,17 @@ body {
 
 .carousel section:hover {
   transform: translateY(-10px);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #f1f1f1;
+  color: #343a40;
+  position: fixed;
+  width: calc(100% - 200px);
+  bottom: 0;
+  margin-left: 200px;
 }
 
 .sidebar.collapsed {
@@ -111,5 +130,10 @@ body {
 }
 
 .content.collapsed {
+  margin-left: 60px;
+}
+
+footer.collapsed {
+  width: calc(100% - 60px);
   margin-left: 60px;
 }
