@@ -35,10 +35,10 @@ body {
 }
 
 .sidebar-links a {
-  padding: 10px 15px;
+  padding: 12px 15px; /* Increased padding */
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px; /* Reduced font size */
   color: #343a40;
   display: block;
   width: 100%;
@@ -80,12 +80,14 @@ body {
 .carousel section {
   scroll-snap-align: start;
   max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 30px auto; /* Increased margin between cards */
+  padding: 30px; /* Increased padding inside cards */
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  line-height: 1.6; /* Increased line height for readability */
+  font-size: 18px; /* Adjusted font size */
 }
 
 .carousel section:hover {
