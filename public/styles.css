@@ -1,141 +1,234 @@
-body {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+body, .quicksand-body {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Background color */
+}
+
+/* DM Serif Text for headings and links */
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f4f4f4; /* Match the background color */
+    color: black;
+    padding: 10px 0; /* Adjust padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow on the content */
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Centered container inside the header */
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust the height as needed */
+    width: auto;  /* Maintain aspect ratio */
+    display: block;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.hamburger {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: none; /* Initially hidden on larger screens */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for the entire content area */
+    margin: auto; /* Center the content horizontally */
+    display: flex;
+    padding-top: 70px; /* Space for fixed header */
 }
 
 .sidebar {
-  height: 100vh;
-  width: 200px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #f8f9fa;
-  padding-top: 20px;
-  transition: width 0.3s;
-  overflow: hidden;
-  z-index: 1000;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    width: 200px;
+    background-color: #f4f4f4; /* Match the background color of the body */
+    color: black;
+    padding: 20px; /* Space between sidebar items and content */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: right; /* Align text to the right */
+    position: fixed; /* Fix the sidebar */
+    top: 70px; /* Align with the bottom of the header */
+    left: calc((100% - 1200px) / 2); /* Adjust position to align with the centered container */
+    height: calc(100% - 70px); /* Full height minus the header */
+    overflow-y: auto; /* Add scrolling if content overflows */
 }
 
-.sidebar .logo {
-  height: 50px;
-  width: 50px;
-  margin: 0 auto 20px;
-  display: block;
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 
-.sidebar-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.sidebar ul li {
+    padding: 10px 0; /* Space between links */
 }
 
-.sidebar-links a {
-  padding: 12px 15px; /* Increased padding */
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px; /* Reduced font size */
-  color: #343a40;
-  display: block;
-  width: 100%;
-  transition: background-color 0.3s, color 0.3s;
+.sidebar ul li a {
+    color: #7d7d7d; /* Gray color for inactive links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.sidebar-links a:hover {
-  background-color: #007bff;
-  color: white;
+.sidebar ul li a.active {
+    color: #000000; /* Black color for active link */
 }
 
-.sidebar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #007bff;
-  color: #f1f1f1;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.content {
-  margin-left: 200px;
-  padding: 20px;
-  transition: margin-left 0.3s;
-  flex-grow: 1;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.content img.logo {
-  max-width: 150px; /* Adjust this value as needed */
-  display: block;
-  margin: 0 auto 20px; /* Center the logo and add some bottom margin */
-}
-
-.carousel section {
-  scroll-snap-align: start;
-  max-width: 800px;
-  margin: 30px auto; /* Increased margin between cards */
-  padding: 30px; /* Increased padding inside cards */
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-  line-height: 1.6; /* Increased line height for readability */
-  font-size: 18px; /* Adjusted font size */
-}
-
-.carousel section:hover {
-  transform: translateY(-10px);
+#content {
+    margin-left: 220px; /* Space for the sidebar */
+    flex: 1;
+    max-width: 1000px; /* Set maximum content width */
+    padding: 20px;
+    text-align: justify; /* Justify text */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: auto; /* Ensure content scrolls */
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
-  background: #f1f1f1;
-  color: #343a40;
-  position: fixed;
-  width: calc(100% - 200px);
-  bottom: 0;
-  margin-left: 200px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f4f4f4; /* Match the background color */
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Shadow on the content */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.sidebar.collapsed {
-  width: 60px;
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
-.sidebar.collapsed .sidebar-links a {
-  text-align: left;
-  padding-left: 15px;
-  font-size: 0;
+.hidden-footer {
+    transform: translateY(100%);
+    opacity: 0;
 }
 
-.sidebar.collapsed .sidebar-links a::before {
-  content: attr(data-icon);
-  font-size: 18px;
-  margin-right: 15px;
+.context-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
 }
 
-.sidebar.collapsed .logo {
-  height: 50px;
-  width: 50px;
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.sidebar.collapsed .sidebar-toggle {
-  left: 10px;
-  right: auto;
+.context-menu ul li {
+    padding: 8px 12px;
 }
 
-.content.collapsed {
-  margin-left: 60px;
+.context-menu ul li a {
+    text-decoration: none;
+    color: #333;
 }
 
-footer.collapsed {
-  width: calc(100% - 60px);
-  margin-left: 60px;
+/* General table styling */
+table {
+    width: 100%; /* Table takes the full width of its container */
+    border-collapse: collapse; /* Ensure no extra space between cells */
+    margin-bottom: 20px; /* Add some spacing below tables */
+}
+
+/* Styling for table rows */
+table tr:nth-child(odd) {
+    background-color: #f4f4f4; /* Light gray for odd rows */
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+/* Remove default table borders */
+table, th, td {
+    border: none;
+}
+
+/* Optional: add some padding to table cells for better readability */
+table th, table td {
+    padding: 10px; /* Adjust padding as needed */
+    text-align: left; /* Left-align text by default */
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        justify-content: space-between; /* Space out the logo and hamburger */
+    }
+
+    .logo {
+        margin-right: auto; /* Align logo to the left */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on smaller screens */
+    }
+
+    .sidebar {
+        width: 50%; /* Sidebar takes 50% of the screen width */
+        left: -50%; /* Hide sidebar offscreen initially */
+        position: fixed;
+        top: 0;
+        padding-top: 70px; /* Space for fixed header */
+        transition: left 0.3s ease;
+        z-index: 999;
+        height: calc(100% - 70px); /* Adjust height */
+        overflow-y: auto; /* Enable scrolling for sidebar content */
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Add white shadow */
+    }
+
+    .sidebar.open {
+        left: 0; /* Slide in the sidebar */
+    }
+
+    #content {
+        max-width: 100%; /* Use full width for content */
+        margin-left: 0; /* Remove left margin */
+    }
 }

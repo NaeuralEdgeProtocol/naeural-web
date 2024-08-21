@@ -1,5 +1,8 @@
 .env
 
+# editor/IDE cache files
+.idea/
+
 # Logs
 logs
 *.log
