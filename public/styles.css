@@ -6,6 +6,17 @@ body, .quicksand-body {
     background-color: #f4f4f4; /* Background color */
 }
 
+.external-link:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.with-top-divider {
+    border-top: 1px solid #cccccc;
+    margin-top: 20px;
+}
+
 /* DM Serif Text for headings and links */
 .dm-serif-text-regular {
     font-family: "DM Serif Text", serif;

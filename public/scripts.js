@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for sidebar links
     sidebarLinks.forEach(link => {
         link.addEventListener('click', function(event) {
+            if(this.getAttribute('class').includes('external-link')) {
+                return;
+            }
+
             event.preventDefault(); // Prevent default anchor click behavior
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
